@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-19T02:13:09.060Z</updated>
+  <updated>2021-11-19T12:27:58.879Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Repositories</title>
+    <link href="http://example.com/2021/11/19/repository/"/>
+    <id>http://example.com/2021/11/19/repository/</id>
+    <published>2021-11-19T12:27:13.884Z</published>
+    <updated>2021-11-19T12:27:58.879Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于hexo</title>
+    <link href="http://example.com/2021/11/19/1/"/>
+    <id>http://example.com/2021/11/19/1/</id>
+    <published>2021-11-19T12:07:51.000Z</published>
+    <updated>2021-11-19T12:11:51.798Z</updated>
+    
+    <content type="html"><![CDATA[<p>hexo算是搭建好了，这就当是我的测试站点吧</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;hexo算是搭建好了，这就当是我的测试站点吧&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>test_my_site</title>
@@ -46,6 +80,23 @@
     
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo主题pure使用指南</title>
+    <link href="http://example.com/2019/11/05/2/"/>
+    <id>http://example.com/2019/11/05/2/</id>
+    <published>2019-11-05T06:34:15.000Z</published>
+    <updated>2021-11-19T13:22:33.542Z</updated>
+    
+    
+    
+    
+    <category term="hexo" scheme="http://example.com/categories/hexo/"/>
+    
+    
+    <category term="hexo主题" scheme="http://example.com/tags/hexo%E4%B8%BB%E9%A2%98/"/>
     
   </entry>
   
