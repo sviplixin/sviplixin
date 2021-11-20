@@ -1,31 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://example.com/articles/37456/</loc>
+    <loc>http://example.com/27201.html</loc>
     <lastmod>2021-11-20</lastmod>
   </url>
   <url>
-    <loc>http://example.com/articles/9daba997/</loc>
+    <loc>http://example.com/13838.html</loc>
     <lastmod>2021-11-20</lastmod>
   </url>
   <url>
-    <loc>http://example.com/articles/14bf8efe/</loc>
+    <loc>http://example.com/37456.html</loc>
     <lastmod>2021-11-20</lastmod>
   </url>
   <url>
-    <loc>http://example.com/articles/27065/</loc>
+    <loc>http://example.com/14bf8efe.html</loc>
     <lastmod>2021-11-20</lastmod>
   </url>
   <url>
-    <loc>http://example.com/articles/31400/</loc>
-    <lastmod>2021-11-20</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/articles/63153/</loc>
-    <lastmod>2021-11-19</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/articles/16107/</loc>
+    <loc>http://example.com/16107.html</loc>
     <lastmod>2021-11-19</lastmod>
   </url>
 </urlset> 
