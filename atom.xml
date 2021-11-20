@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>lixin.ee</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://blog.lixin.ee/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2021-11-20T13:50:03.574Z</updated>
-  <id>http://example.com/</id>
+  <link href="http://blog.lixin.ee/"/>
+  <updated>2021-11-20T14:49:35.915Z</updated>
+  <id>http://blog.lixin.ee/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Li Xin</name>
     
   </author>
   
@@ -18,10 +18,10 @@
   
   <entry>
     <title>hexo插件</title>
-    <link href="http://example.com/37456.html"/>
-    <id>http://example.com/37456.html</id>
+    <link href="http://blog.lixin.ee/37456.html"/>
+    <id>http://blog.lixin.ee/37456.html</id>
     <published>2021-11-20T12:17:13.000Z</published>
-    <updated>2021-11-20T13:50:03.574Z</updated>
+    <updated>2021-11-20T14:49:35.915Z</updated>
     
     <content type="html"><![CDATA[<h1 id="abbrlink"><a href="#abbrlink" class="headerlink" title="abbrlink"></a>abbrlink</h1><p>一个基于帖子标题生成静态帖子链接的Hexo 插件。</p><h3 id="安装-hexo-abbrlink"><a href="#安装-hexo-abbrlink" class="headerlink" title="安装 hexo-abbrlink"></a>安装 hexo-abbrlink</h3><p>博客项目的根目录直接执行：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure><h3 id="Hexo-配置"><a href="#Hexo-配置" class="headerlink" title="Hexo 配置"></a>Hexo 配置</h3><p>还是刚才的配置文件（站点配置文件），把permalink改成以下配置：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">permalink: :abbrlink.html</span><br></pre></td></tr></table></figure><h3 id="Next-配置"><a href="#Next-配置" class="headerlink" title="Next 配置"></a>Next 配置</h3><p>打开主题配置文件：/blog/theme/主题名/_config.yml，新增配置如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># post url</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  #support crc16(default) and crc32</span><br><span class="line">  rep: hex    #support dec(default) and hex</span><br></pre></td></tr></table></figure><h3 id="hexo-clean-amp-amp-hexo-g"><a href="#hexo-clean-amp-amp-hexo-g" class="headerlink" title="hexo clean &amp;&amp; hexo g"></a>hexo clean &amp;&amp; hexo g</h3><p>这一步是必须操作，hexo clean清除 public 站点文件，hexo g重新生成站点文件。生成之后，打开一个.md 博文文件，你会发现，在顶部的定义部分新增了一个abbrlink属性，后面是文件的 url 资源路径。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">abbrlink: 44359</span><br></pre></td></tr></table></figure><h3 id="hexo-s"><a href="#hexo-s" class="headerlink" title="hexo s"></a>hexo s</h3><p>重启服务。重启之后回到 home 主页，点开一个博文查看 url，不出意外 url 已发生改变，没有改变的同学查看下 2 个配置文件处，是否配置对了，别搞混了，不要都配置到一个文件中。</p>]]></content>
     
@@ -34,26 +34,30 @@
     
     
     
+    <category term="hexo博客" scheme="http://blog.lixin.ee/categories/hexo%E5%8D%9A%E5%AE%A2/"/>
+    
     
   </entry>
   
   <entry>
     <title>hexo博客从Giulia迁移到服务器</title>
-    <link href="http://example.com/14bf8efe.html"/>
-    <id>http://example.com/14bf8efe.html</id>
+    <link href="http://blog.lixin.ee/14bf8efe.html"/>
+    <id>http://blog.lixin.ee/14bf8efe.html</id>
     <published>2021-11-20T11:59:35.000Z</published>
-    <updated>2021-11-20T12:16:36.154Z</updated>
+    <updated>2021-11-20T14:49:55.530Z</updated>
     
     
     
+    
+    <category term="hexo博客" scheme="http://blog.lixin.ee/categories/hexo%E5%8D%9A%E5%AE%A2/"/>
     
     
   </entry>
   
   <entry>
     <title>Hexo博客所用到的MD编辑器语法</title>
-    <link href="http://example.com/13838.html"/>
-    <id>http://example.com/13838.html</id>
+    <link href="http://blog.lixin.ee/13838.html"/>
+    <id>http://blog.lixin.ee/13838.html</id>
     <published>2021-11-20T06:34:15.000Z</published>
     <updated>2021-11-20T13:56:14.312Z</updated>
     
@@ -69,19 +73,19 @@
     
     
     
-    <category term="hexo博客" scheme="http://example.com/categories/hexo%E5%8D%9A%E5%AE%A2/"/>
+    <category term="hexo博客" scheme="http://blog.lixin.ee/categories/hexo%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="MD语法" scheme="http://example.com/tags/MD%E8%AF%AD%E6%B3%95/"/>
+    <category term="MD语法" scheme="http://blog.lixin.ee/tags/MD%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>hexo如何写文章和删除文章</title>
-    <link href="http://example.com/27201.html"/>
-    <id>http://example.com/27201.html</id>
+    <link href="http://blog.lixin.ee/27201.html"/>
+    <id>http://blog.lixin.ee/27201.html</id>
     <published>2021-11-19T12:07:51.000Z</published>
-    <updated>2021-11-20T13:57:36.720Z</updated>
+    <updated>2021-11-20T14:49:00.021Z</updated>
     
     <content type="html"><![CDATA[<p>hexo算是搭建好了，可是怎么写文章，本地上传以及删除和更新文章，这篇博客同样写给我，留着备用。</p><h1 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h1><p>使用命令来新建文章</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &lt;模板&gt; &lt;文章名&gt;</span><br></pre></td></tr></table></figure><h3 id="文章索引目录"><a href="#文章索引目录" class="headerlink" title="文章索引目录"></a>文章索引目录</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: 文章标题</span><br><span class="line">tags:</span><br><span class="line">  - 文章标签</span><br><span class="line">categories:</span><br><span class="line">  - 文章分类</span><br><span class="line">toc: true # 是否启用内容索引</span><br></pre></td></tr></table></figure><h3 id="侧边栏侧边栏"><a href="#侧边栏侧边栏" class="headerlink" title="侧边栏侧边栏"></a>侧边栏侧边栏</h3><p>文章侧边栏默认为开启状态，如果某篇文章不想开启侧边栏，在文章入门配置加入“侧边栏：无”：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: 文章标题</span><br><span class="line">categories:</span><br><span class="line">  - 文章分类</span><br><span class="line">tags:</span><br><span class="line">  - 文章标签</span><br><span class="line">sidebar: none # 是否启用sidebar侧边栏，none：不启用</span><br></pre></td></tr></table></figure><h1 id="删除文章"><a href="#删除文章" class="headerlink" title="删除文章"></a>删除文章</h1><p>删除文章的过程一样也很简单，先删除本地文件，然后通过生成和部署命令进而将远程仓库中的文件也一并删除。具体来说，以最开始默认形成的helloworld.md这篇文章为例。</p><p>首先进入到source / _post 文件夹中，找到helloworld.md文件，在本地直接执行删除。然后依次执行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>再去主页查看你就会发现你的博客上面已经空空如也了，这就是如何删除文章的方法。</p><h1 id="更新文章"><a href="#更新文章" class="headerlink" title="更新文章"></a>更新文章</h1><h1 id="上传文章"><a href="#上传文章" class="headerlink" title="上传文章"></a>上传文章</h1>]]></content>
     
@@ -94,15 +98,17 @@
     
     
     
+    <category term="hexo博客" scheme="http://blog.lixin.ee/categories/hexo%E5%8D%9A%E5%AE%A2/"/>
+    
     
   </entry>
   
   <entry>
     <title>Hello World（你好，世界）</title>
-    <link href="http://example.com/16107.html"/>
-    <id>http://example.com/16107.html</id>
-    <published>2021-11-19T02:10:46.478Z</published>
-    <updated>2021-11-20T14:18:06.398Z</updated>
+    <link href="http://blog.lixin.ee/16107.html"/>
+    <id>http://blog.lixin.ee/16107.html</id>
+    <published>2021-11-17T11:59:35.000Z</published>
+    <updated>2021-11-20T14:50:57.761Z</updated>
     
     <content type="html"><![CDATA[<p>欢迎来到<a href="https://hexo.io/">Hexo</a>!这是你的第一篇文章。查看<a href="https://hexo.io/docs/">文档</a>了解更多信息。如果您在使用 Hexo 时遇到任何问题， 您可以在<a href="https://hexo.io/docs/troubleshooting.html">疑难解答</a>中找到答案，也可以在<a href="https://github.com/hexojs/hexo/issues">GitHub</a>上问我。</p><h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建一个新帖子"><a href="#创建一个新帖子" class="headerlink" title="创建一个新帖子"></a>创建一个新帖子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>更多信息: <a href="https://hexo.io/zh-cn/docs/writing.html">写作</a></p><h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>更多信息: <a href="https://hexo.io/zh-cn/docs/server.html">服务器</a></p><h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>更多信息: <a href="https://hexo.io/zh-cn/docs/generating.html">生成</a></p><h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>更多信息: <a href="https://hexo.io/zh-cn/docs/one-command-deployment.html">部署</a></p>]]></content>
     

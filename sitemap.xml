@@ -2,84 +2,84 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/16107.html</loc>
+    <loc>http://blog.lixin.ee/16107.html</loc>
     
     <lastmod>2021-11-20</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/27201.html</loc>
+    <loc>http://blog.lixin.ee/14bf8efe.html</loc>
     
     <lastmod>2021-11-20</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/13838.html</loc>
+    <loc>http://blog.lixin.ee/37456.html</loc>
     
     <lastmod>2021-11-20</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/37456.html</loc>
+    <loc>http://blog.lixin.ee/27201.html</loc>
     
     <lastmod>2021-11-20</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/14bf8efe.html</loc>
+    <loc>http://blog.lixin.ee/13838.html</loc>
     
     <lastmod>2021-11-20</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/about/index.html</loc>
+    <loc>http://blog.lixin.ee/about/index.html</loc>
     
     <lastmod>2021-11-19</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/books/index.html</loc>
+    <loc>http://blog.lixin.ee/books/index.html</loc>
     
     <lastmod>2021-11-19</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/repository/index.html</loc>
+    <loc>http://blog.lixin.ee/repository/index.html</loc>
     
     <lastmod>2021-11-19</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>http://blog.lixin.ee/tags/index.html</loc>
     
     <lastmod>2021-11-19</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/links/index.html</loc>
+    <loc>http://blog.lixin.ee/links/index.html</loc>
     
     <lastmod>2021-11-19</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>http://blog.lixin.ee/categories/index.html</loc>
     
     <lastmod>2021-11-19</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/404.html</loc>
+    <loc>http://blog.lixin.ee/404.html</loc>
     
     <lastmod>2021-11-19</lastmod>
     
@@ -87,7 +87,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>http://blog.lixin.ee/</loc>
     <lastmod>2021-11-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -95,7 +95,7 @@
 
   
   <url>
-    <loc>http://example.com/tags/MD%E8%AF%AD%E6%B3%95/</loc>
+    <loc>http://blog.lixin.ee/tags/MD%E8%AF%AD%E6%B3%95/</loc>
     <lastmod>2021-11-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -104,7 +104,7 @@
 
   
   <url>
-    <loc>http://example.com/categories/hexo%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>http://blog.lixin.ee/categories/hexo%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-11-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
