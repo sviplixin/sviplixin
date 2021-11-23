@@ -17,16 +17,16 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>hexo如何写文章和删除文章 | lixin.ee</title>
-  <meta name="description" content="hexo算是搭建好了，可是怎么写文章，本地上传以及删除和更新文章，这篇博客同样写给我，留着备用。 新建文章使用命令来新建文章 1hexo new &lt;模板&gt; &lt;文章名&gt; 文章索引目录123456title: 文章标题tags:  - 文章标签categories:  - 文章分类toc: true # 是否启用内容索引 侧边栏侧边栏文章侧边栏默认为开启状态，如果某篇文章不想开">
+  <title>hexo如何新建文章和删除文章 | lixin.ee</title>
+  <meta name="description" content="hexo算是搭建好了，可是怎么写文章，本地上传以及删除和更新文章，这篇博客同样写给我，留着备用。 新建文章使用命令来新建文章 1hexo new &lt;文章标题&gt; # 或者 hexo n 文章标题 命令执行完后，就会发现在Hexo\source_posts目录中多了一个文件文章名.md，这就是我们刚才新建的博文。 此外，我们也可以直接进入Hexo\source_posts目录中，右键新建一">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo如何写文章和删除文章">
+<meta property="og:title" content="hexo如何新建文章和删除文章">
 <meta property="og:url" content="http://blog.lixin.ee/27201.html">
 <meta property="og:site_name" content="lixin.ee">
-<meta property="og:description" content="hexo算是搭建好了，可是怎么写文章，本地上传以及删除和更新文章，这篇博客同样写给我，留着备用。 新建文章使用命令来新建文章 1hexo new &lt;模板&gt; &lt;文章名&gt; 文章索引目录123456title: 文章标题tags:  - 文章标签categories:  - 文章分类toc: true # 是否启用内容索引 侧边栏侧边栏文章侧边栏默认为开启状态，如果某篇文章不想开">
+<meta property="og:description" content="hexo算是搭建好了，可是怎么写文章，本地上传以及删除和更新文章，这篇博客同样写给我，留着备用。 新建文章使用命令来新建文章 1hexo new &lt;文章标题&gt; # 或者 hexo n 文章标题 命令执行完后，就会发现在Hexo\source_posts目录中多了一个文件文章名.md，这就是我们刚才新建的博文。 此外，我们也可以直接进入Hexo\source_posts目录中，右键新建一">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-11-19T12:07:51.000Z">
-<meta property="article:modified_time" content="2021-11-20T14:49:00.021Z">
+<meta property="article:modified_time" content="2021-11-23T14:46:21.361Z">
 <meta property="article:author" content="Li Xin">
 <meta property="article:tag" content="LIXIN">
 <meta name="twitter:card" content="summary">
@@ -297,7 +297,7 @@
                 <a class="category-link" href="/categories/hexo%E5%8D%9A%E5%AE%A2/">hexo博客</a>
               </p>
               <p class="item-title">
-                <a href="/14bf8efe.html" class="title">hexo博客从Giulia迁移到服务器</a>
+                <a href="/14bf8efe.html" class="title">hexo博客部署到云服务器(使用宝塔面板)</a>
               </p>
               <p class="item-date">
                 <time datetime="2021-11-20T11:59:35.000Z" itemprop="datePublished">2021-11-20</time>
@@ -327,7 +327,7 @@
                 <a class="category-link" href="/categories/hexo%E5%8D%9A%E5%AE%A2/">hexo博客</a>
               </p>
               <p class="item-title">
-                <a href="/27201.html" class="title">hexo如何写文章和删除文章</a>
+                <a href="/27201.html" class="title">hexo如何新建文章和删除文章</a>
               </p>
               <p class="item-date">
                 <time datetime="2021-11-19T12:07:51.000Z" itemprop="datePublished">2021-11-19</time>
@@ -355,7 +355,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      hexo如何写文章和删除文章
+      hexo如何新建文章和删除文章
     </h1>
   
 
@@ -387,10 +387,10 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/27201.html#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 319(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 684(字)</span>
 	
 	
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2(分)</span>
 	
 
       </div>
@@ -399,15 +399,29 @@
       
         <p>hexo算是搭建好了，可是怎么写文章，本地上传以及删除和更新文章，这篇博客同样写给我，留着备用。</p>
 <h1 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h1><p>使用命令来新建文章</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &lt;模板&gt; &lt;文章名&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="文章索引目录"><a href="#文章索引目录" class="headerlink" title="文章索引目录"></a>文章索引目录</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: 文章标题</span><br><span class="line">tags:</span><br><span class="line">  - 文章标签</span><br><span class="line">categories:</span><br><span class="line">  - 文章分类</span><br><span class="line">toc: true # 是否启用内容索引</span><br></pre></td></tr></table></figure>
-<h3 id="侧边栏侧边栏"><a href="#侧边栏侧边栏" class="headerlink" title="侧边栏侧边栏"></a>侧边栏侧边栏</h3><p>文章侧边栏默认为开启状态，如果某篇文章不想开启侧边栏，在文章入门配置加入“侧边栏：无”：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: 文章标题</span><br><span class="line">categories:</span><br><span class="line">  - 文章分类</span><br><span class="line">tags:</span><br><span class="line">  - 文章标签</span><br><span class="line">sidebar: none # 是否启用sidebar侧边栏，none：不启用</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &lt;文章标题&gt; # 或者 hexo n 文章标题</span><br></pre></td></tr></table></figure>
+<p>命令执行完后，就会发现在<code>Hexo\source_posts</code>目录中多了一个文件<code>文章名.md</code>，这就是我们刚才新建的博文。</p>
+<p>此外，我们也可以直接进入<code>Hexo\source_posts</code>目录中，右键新建一个文本文档，将名字改为<code>文章名.md</code>，这样也新建了一篇博文。</p>
+<h1 id="新建页面"><a href="#新建页面" class="headerlink" title="新建页面"></a>新建页面</h1><p>上面新建的文章是显示在单个文章界面，这里新建的页面是作为单个页面显示的，比如下图的分类、标签、归档和关于我，你点击后都是显示为单个页面。</p>
+<p>你只需要记住新建博文是用上面的方法，新建页面是用这里的方法就行了，这里也采用命令新建页面：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page &quot;页面名称&quot;</span><br></pre></td></tr></table></figure>
+<p>命令执行完后，就会发现在<code>Hexo\source</code>目录中多了一个文件夹，里面还有一个index.md，这就代表我们新建了一个页面。</p>
+<h1 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h1><p>用文本编辑器打开上面新建的博文，如下所示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: 文章标题</span><br><span class="line">tags:</span><br><span class="line">  - 文章标签</span><br><span class="line">categories:</span><br><span class="line">  - 文章分类</span><br><span class="line">toc: true # 是否启用内容索引</span><br></pre></td></tr></table></figure>
+<p>新建的页面略有不同，没有tags和categories标签。三个”-“后面就是博文的正文内容，接下来就是正儿八经地撰写博文了。</p>
 <h1 id="删除文章"><a href="#删除文章" class="headerlink" title="删除文章"></a>删除文章</h1><p>删除文章的过程一样也很简单，先删除本地文件，然后通过生成和部署命令进而将远程仓库中的文件也一并删除。具体来说，以最开始默认形成的helloworld.md这篇文章为例。</p>
-<p>首先进入到source / _post 文件夹中，找到helloworld.md文件，在本地直接执行删除。然后依次执行</p>
+<p>首先进入到<code>source / _post</code> 文件夹中，找到helloworld.md文件，在本地直接执行删除。然后依次执行</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>再去主页查看你就会发现你的博客上面已经空空如也了，这就是如何删除文章的方法。</p>
-<h1 id="更新文章"><a href="#更新文章" class="headerlink" title="更新文章"></a>更新文章</h1><h1 id="上传文章"><a href="#上传文章" class="headerlink" title="上传文章"></a>上传文章</h1>
+<p>再去主页查看你就会发现你的博客上面已经空空如也了。</p>
+<h1 id="上传文章"><a href="#上传文章" class="headerlink" title="上传文章"></a>上传文章</h1><p>在 Git Shell 中进入 Hexo 文件夹，执行下面几条命令，将博客部署到 GitHub 上：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate # (输入hexo g也可以)</span><br><span class="line">(若要本地预览就先执行 hexo server)</span><br><span class="line">hexo deploy # (输入hexo d也可以)</span><br></pre></td></tr></table></figure>
+<p>快捷命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo g == hexo generate</span><br><span class="line">hexo d == hexo deploy</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo n == hexo new</span><br></pre></td></tr></table></figure>
+<p>还能组合使用，如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+<p>刷新你的个人博客</p>
+<h1 id="更新文章"><a href="#更新文章" class="headerlink" title="更新文章"></a>更新文章</h1><p>修改了谋篇文章内容需要同步更新，方法同上。在 Git Shell 中进入 Hexo 文件夹，执行下面几条命令，将博客部署到 GitHub 上：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
       
     </div>
     <div class="article-footer">
@@ -416,7 +430,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://blog.lixin.ee/27201.html" title="hexo如何写文章和删除文章" target="_blank" rel="external">http://blog.lixin.ee/27201.html</a>
+      <a href="http://blog.lixin.ee/27201.html" title="hexo如何新建文章和删除文章" target="_blank" rel="external">http://blog.lixin.ee/27201.html</a>
     </li>
     
     <li class="post-copyright-license">

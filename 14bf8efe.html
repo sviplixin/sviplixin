@@ -17,19 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>hexo博客从Giulia迁移到服务器 | lixin.ee</title>
-  <meta name="description" content="lixin的博客">
+  <title>hexo博客部署到云服务器(使用宝塔面板) | lixin.ee</title>
+  <meta name="description" content="思路是： 在服务器上搭建Git环境，创建Git仓库在主机生成Hexo静态文件，通过与服务器连接，推到服务器上的Git仓库通过git-hooks实现自动部署到网站资源目录Nginx做静态文件服务器，实现外界对网站资源目录的访问一、环境准备  安装宝塔面板我是安装了服务器上面的Cloudreve镜像，自带有宝塔面板。宝塔面板安装很简单，直接连上服务器（推荐宝塔终端，很简单易用），输入    1yum">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo博客从Giulia迁移到服务器">
+<meta property="og:title" content="hexo博客部署到云服务器(使用宝塔面板)">
 <meta property="og:url" content="http://blog.lixin.ee/14bf8efe.html">
 <meta property="og:site_name" content="lixin.ee">
-<meta property="og:description" content="lixin的博客">
+<meta property="og:description" content="思路是： 在服务器上搭建Git环境，创建Git仓库在主机生成Hexo静态文件，通过与服务器连接，推到服务器上的Git仓库通过git-hooks实现自动部署到网站资源目录Nginx做静态文件服务器，实现外界对网站资源目录的访问一、环境准备  安装宝塔面板我是安装了服务器上面的Cloudreve镜像，自带有宝塔面板。宝塔面板安装很简单，直接连上服务器（推荐宝塔终端，很简单易用），输入    1yum">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://typora-1305223211.cos.ap-chongqing.myqcloud.com/taiblog/2021-05-12\_16.png">
 <meta property="article:published_time" content="2021-11-20T11:59:35.000Z">
-<meta property="article:modified_time" content="2021-11-20T14:49:55.530Z">
+<meta property="article:modified_time" content="2021-11-23T14:02:07.679Z">
 <meta property="article:author" content="Li Xin">
 <meta property="article:tag" content="LIXIN">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://typora-1305223211.cos.ap-chongqing.myqcloud.com/taiblog/2021-05-12\_16.png">
   <!-- Canonical links -->
   <link rel="canonical" href="http://blog.lixin.ee/14bf8efe.html">
   
@@ -297,7 +299,7 @@
                 <a class="category-link" href="/categories/hexo%E5%8D%9A%E5%AE%A2/">hexo博客</a>
               </p>
               <p class="item-title">
-                <a href="/14bf8efe.html" class="title">hexo博客从Giulia迁移到服务器</a>
+                <a href="/14bf8efe.html" class="title">hexo博客部署到云服务器(使用宝塔面板)</a>
               </p>
               <p class="item-date">
                 <time datetime="2021-11-20T11:59:35.000Z" itemprop="datePublished">2021-11-20</time>
@@ -327,7 +329,7 @@
                 <a class="category-link" href="/categories/hexo%E5%8D%9A%E5%AE%A2/">hexo博客</a>
               </p>
               <p class="item-title">
-                <a href="/27201.html" class="title">hexo如何写文章和删除文章</a>
+                <a href="/27201.html" class="title">hexo如何新建文章和删除文章</a>
               </p>
               <p class="item-date">
                 <time datetime="2021-11-19T12:07:51.000Z" itemprop="datePublished">2021-11-19</time>
@@ -355,7 +357,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      hexo博客从Giulia迁移到服务器
+      hexo博客部署到云服务器(使用宝塔面板)
     </h1>
   
 
@@ -387,17 +389,62 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/14bf8efe.html#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 0(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1.5k(字)</span>
 	
 	
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 6(分)</span>
 	
 
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        
+        <p>思路是：</p>
+<p>在服务器上搭建Git环境，创建Git仓库<br>在主机生成Hexo静态文件，通过与服务器连接，推到服务器上的Git仓库<br>通过git-hooks实现自动部署到网站资源目录<br>Nginx做静态文件服务器，实现外界对网站资源目录的访问<br>一、环境准备</p>
+<ol>
+<li>安装宝塔面板<br>我是安装了服务器上面的<strong>Cloudreve</strong>镜像，自带有宝塔面板。宝塔面板安装很简单，直接连上服务器（推荐宝塔终端，很简单易用），输入    <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install\_6.0.sh &amp;&amp; sh install.sh</span><br></pre></td></tr></table></figure>
+显示如下即成功<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">外网面板地址: http://49.232.1.111:8888 #用来访问面板</span><br><span class="line"></span><br><span class="line">内网面板地址: http://10.0.8.13:8888</span><br><span class="line"></span><br><span class="line">\*以下仅为初始默认账户密码，若无法登录请执行bt命令重置账户/密码登录</span><br><span class="line"></span><br><span class="line">username: ehmpmg7m #记住用户名和密码</span><br><span class="line"></span><br><span class="line">password: dsjfhasd #忘记可使用sudo /etc/init.d/bt default查看</span><br><span class="line"></span><br><span class="line">If you cannot access the panel,</span><br><span class="line"></span><br><span class="line">release the following panel port [8888] in the security group</span><br><span class="line"></span><br><span class="line">若无法访问面板，请检查防火墙/安全组是否有放行面板[8888]端口 #安全组注意放行，轻量级服务器为防火墙</span><br></pre></td></tr></table></figure>
+然后在宝塔面板网站-&gt;添加站点，找到放置网站资源目录<br><code>www/wwwroot/taitrs.cc</code></li>
+<li>安装nginx和git<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y nginx git</span><br></pre></td></tr></table></figure></li>
+<li>Nginx服务器配置<br>通过宝塔面板可以方便地修改Nginx的配置文件，在taitres.cc的设置中找到配置文件，应该是自动配好了的，没有就自己设置下，也可以使用其他端口</li>
+</ol>
+<img src="https://typora-1305223211.cos.ap-chongqing.myqcloud.com/taiblog/2021-05-12\_16.png" alt="" style="zoom: 67%;" />
+二、Git仓库搭建
+之前推hexo的静态文件都是推到GitHub的仓库，现在服务器也是一样，需要仓库来保存
+1.添加一个用户git
+在服务器端
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">adduser git   #添加git用户</span><br><span class="line"></span><br><span class="line">chmod 740 /etc/sudoers  #改变sudoers文件的权限为文件所有者可写</span><br><span class="line"></span><br><span class="line">vim /etc/sudoers</span><br><span class="line"></span><br><span class="line">#在root ALL=(ALL) ALL 下方添加一行 </span><br><span class="line"></span><br><span class="line">git ALL=(ALL) ALL</span><br><span class="line"></span><br><span class="line">chmod 400 /etc/sudoers  #将其权限修改为文件所有者可读</span><br></pre></td></tr></table></figure>
+2.给git用户添加ssh密钥
+这一步是为了建立主机与服务器连接，使其不需要密码也能登陆
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#在主机端打开powershell，cd到C:\Users\admin\.ssh生成密匙，如已有密匙可跳过这一步</span><br><span class="line"></span><br><span class="line">ssh-keygen -t rsa -C &quot;taitres.cc&quot;</span><br><span class="line"></span><br><span class="line"># -t 指定密钥类型，默认是 rsa ，可以省略</span><br><span class="line"></span><br><span class="line"># -C 用于识别这个密钥的注释，可以输入任何内容</span><br><span class="line"></span><br><span class="line"># -f 指定密钥文件存储文件名，默认id\_rsa</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#在服务器端</span><br><span class="line"></span><br><span class="line">su git  #切换到git用户</span><br><span class="line"></span><br><span class="line">mkdir -p ~/.ssh</span><br><span class="line"></span><br><span class="line">touch ~/.ssh/authorized\_keys #创建authorized\_keys文件</span><br><span class="line"></span><br><span class="line">chmod 600 ~/.ssh/authorized\_keys  #为authorized\_keys文件赋予文件所有者可读可写的权限</span><br><span class="line"></span><br><span class="line">chmod 700 ~/.ssh  #为.ssh文件夹赋予文件夹所有者可读可写可执行的权限</span><br></pre></td></tr></table></figure>
+复制公匙id_rsa.pub内容到服务器/home/git/.ssh/authorized_keys，关闭终端，使用`ssh git@server`重新登录服务器，测试是否能不要密码登录到git用户，如出现Permission denied的问题可尝试文章末尾的解决办法
+
+<p>3.创建Git仓库</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /home/git/repos    #新建目录，这是git仓库的位置</span><br><span class="line"></span><br><span class="line">cd /home/git/repos</span><br><span class="line"></span><br><span class="line">sudo git init --bare taiblog.git #初始化一个名叫taiblog的仓库</span><br></pre></td></tr></table></figure>
+<p>4.配置钩子实现自动部署<br>找到 <code>/home/git/repos/taiblog.git/hooks/post-update.sample</code> 改名<code>post-update</code>，内容改为 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line"></span><br><span class="line">git --work-tree=/www/wwwroot/taitres.cc --git-dir=/home/git/repos/taiblog.git checkout -f</span><br></pre></td></tr></table></figure>
+<p>然后给权限</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cd taiblog.git/hooks/</span><br><span class="line"></span><br><span class="line">sudo chmod +x post-update  #赋予其可执行权限</span><br><span class="line"></span><br><span class="line">sudo chown -R git:git /home/git/repos/ #仓库所有者改为git</span><br><span class="line"></span><br><span class="line">sudo chown -R git:git /www/wwwroot/taitrs.cc/ #站点文件夹所有者改为git</span><br></pre></td></tr></table></figure>
+<p>5.测试Git仓库是否可用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#在主机端，如果能将仓库拉下来，说明Git仓库搭建成功git clone git@server\_ip:/home/git/repos/blog.git</span><br></pre></td></tr></table></figure>
+<p>三、本地配置和测试<br>1.本地配置<br>修改本地Hexo博客文件夹中的<code>\_config.yml</code>文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"></span><br><span class="line">  type: git</span><br><span class="line"></span><br><span class="line">  repo: git@server:/home/git/repos/taiblog.git</span><br><span class="line"></span><br><span class="line">  branch: maste</span><br></pre></td></tr></table></figure>
+<p>2.测试</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  #清除缓存</span><br><span class="line"></span><br><span class="line">hexo generate #生成静态页面</span><br><span class="line"></span><br><span class="line">hexo delopy  #将本地静态页面目录部署到云服务器</span><br></pre></td></tr></table></figure>
+<p>也可以在package.json 中添加 npm 脚本，这样就可以直接<code>npm run dd</code>一下执行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line"></span><br><span class="line">    &quot;build&quot;: &quot;hexo generate&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;clean&quot;: &quot;hexo clean&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;deploy&quot;: &quot;hexo deploy&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;dd&quot;: &quot;hexo clean &amp;&amp; hexo g -d&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;server&quot;: &quot;hexo server&quot;,</span><br><span class="line"></span><br><span class="line">    &quot;ss&quot;: &quot;hexo clean &amp;&amp; hexo g &amp;&amp; hexo s&quot;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+<p>然后访问自己的IP看看是否成功49.232.1.11</p>
+<p>遇到的一些问题<br>在ssh-copy-id 时报错，ssh-copy-id : 无法将“ssh-copy-id”项识别为 cmdlet、函数、脚本文件或可运行程序的名称<br>解决办法：需要在powershell配置文件中添加以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">function ssh-copy-id([string]$userAtMachine)&#123;   </span><br><span class="line"></span><br><span class="line">    $publicKey = &quot;$ENV:USERPROFILE&quot; + &quot;/.ssh/id\_rsa.pub&quot;</span><br><span class="line"></span><br><span class="line">    if (!(Test-Path &quot;$publicKey&quot;))&#123;</span><br><span class="line"></span><br><span class="line">        Write-Error &quot;ERROR: failed to open ID file &#x27;$publicKey&#x27;: No such file&quot;            </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    else &#123;</span><br><span class="line"></span><br><span class="line">        &amp; cat &quot;$publicKey&quot; | ssh $userAtMachine &quot;umask 077; test -d .ssh || mkdir .ssh ; cat &gt;&gt; .ssh/authorized\_keys || exit 1&quot;      </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>关于powershell配置文件的使用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1.首先检查配置文件是否已经存在</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2.打开powershell输入 `Test-Path $profile`如果返回false，则在C:\Users\admin\Documents\下创建一个WindowsPowerShell文件夹，然后执行</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">New-Item -path $profile -type file</span><br></pre></td></tr></table></figure>
+<p>就创建了一个Microsoft.PowerShell_profile.ps1文件</p>
+<p>使用<code>ssh-add</code>时出现  <code>unable to start ssh-agent service, error :1058</code><br>解决方法：使用管理员权限运行 Power Shell，然后执行<code>Set-Service -Name ssh-agent -StartupType automatic</code>.</p>
+<p>把 ssh-agent 的启动类型设置为自动方式，在任务管理器中查看，ssh-agent是否开启</p>
+<p>连接ssh时出现 Permission denied<br>解决方法：<code>vi /etc/ssh/sshd\_config</code> 修改为PubkeyAuthentication yes（如果前面有#，就去掉#）</p>
+
       
     </div>
     <div class="article-footer">
@@ -406,7 +453,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://blog.lixin.ee/14bf8efe.html" title="hexo博客从Giulia迁移到服务器" target="_blank" rel="external">http://blog.lixin.ee/14bf8efe.html</a>
+      <a href="http://blog.lixin.ee/14bf8efe.html" title="hexo博客部署到云服务器(使用宝塔面板)" target="_blank" rel="external">http://blog.lixin.ee/14bf8efe.html</a>
     </li>
     
     <li class="post-copyright-license">
