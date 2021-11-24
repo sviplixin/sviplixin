@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.lixin.ee/6447.html</loc>
+    
+    <lastmod>2021-11-24</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.lixin.ee/27201.html</loc>
     
     <lastmod>2021-11-23</lastmod>
@@ -58,14 +65,14 @@
   </url>
   
   <url>
-    <loc>http://blog.lixin.ee/repository/index.html</loc>
+    <loc>http://blog.lixin.ee/tags/index.html</loc>
     
     <lastmod>2021-11-19</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.lixin.ee/tags/index.html</loc>
+    <loc>http://blog.lixin.ee/repository/index.html</loc>
     
     <lastmod>2021-11-19</lastmod>
     
@@ -95,7 +102,7 @@
 
   <url>
     <loc>http://blog.lixin.ee/</loc>
-    <lastmod>2021-11-23</lastmod>
+    <lastmod>2021-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -103,7 +110,7 @@
   
   <url>
     <loc>http://blog.lixin.ee/tags/MD%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2021-11-23</lastmod>
+    <lastmod>2021-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -112,7 +119,7 @@
   
   <url>
     <loc>http://blog.lixin.ee/categories/hexo%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2021-11-23</lastmod>
+    <lastmod>2021-11-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
