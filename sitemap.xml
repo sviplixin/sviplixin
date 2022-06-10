@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.lixin.ee/10336.html</loc>
+    
+    <lastmod>2022-06-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.lixin.ee/62222.html</loc>
+    
+    <lastmod>2022-06-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.lixin.ee/38461.html</loc>
     
     <lastmod>2022-05-22</lastmod>
@@ -165,15 +179,29 @@
 
   <url>
     <loc>https://blog.lixin.ee/</loc>
-    <lastmod>2022-05-22</lastmod>
+    <lastmod>2022-06-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://blog.lixin.ee/tags/Windows/</loc>
+    <lastmod>2022-06-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.lixin.ee/tags/office/</loc>
+    <lastmod>2022-06-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.lixin.ee/tags/MD%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2022-05-22</lastmod>
+    <lastmod>2022-06-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -182,14 +210,14 @@
   
   <url>
     <loc>https://blog.lixin.ee/categories/hexo%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2022-05-22</lastmod>
+    <lastmod>2022-06-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.lixin.ee/categories/%E6%AF%95%E4%B8%9A%E4%BA%86/</loc>
-    <lastmod>2022-05-22</lastmod>
+    <lastmod>2022-06-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
